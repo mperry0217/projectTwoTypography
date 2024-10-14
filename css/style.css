@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    min-height: 100vh; 
+    max-width: 100vw;
+    text-transform: uppercase;
+    color: #472417;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:link , a:visited {
+    color: #472417;
+    text-decoration: none;
+}
+
+
+
+/* page 1 */
+
+
+.original, .invert {
+    text-align: center;
+    /* background-color: blue; */
+    margin: auto;
+    height: 100vh;
+    align-content: center;
+    max-width: 100vw;
+    position: relative;
+}
+
+h1 {
+    position: relative;
+}
+
+.first .gather, .first .sing {
+    animation: spacing;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#still, #gather, #sing {
+    position: absolute;
+}
+
+#gather {
+    left: 5%;
+}
+
+#sing {
+    right: 5%;
+}
+
+
+
+
+
+/* page 2  */
+
+.invert {
+    background-color: #472417;
+    color: white;
+}
+
+.firelight {
+    animation: growing;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#tOne,
+#oOne,
+#gOne,
+#eOne,
+#tTwo,
+#hOne,
+#eTwo,
+#rOne {
+    animation: uppies;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-play-state:running;
+}
+
+#tOne {
+    animation-delay: 1s;
+}
+#oOne {
+    animation-delay: 2s;
+}
+#gOne {
+    animation-delay: 3s;
+}
+#eOne {
+    animation-delay: 4s;
+}
+#tTwo {
+    animation-delay: 5s;
+}
+#hOne {
+    animation-delay: 6s;
+}
+#eTwo {
+    animation-delay: 7s;
+}
+#rOne {
+    animation-delay: 8s;
+}
+
+
+
+
+
+
+
+
+
+/* animations */
+
+
+
+
+
+@keyframes spacing {
+    from {
+        padding: 20px;
+    }
+    to {
+        padding: 0;
+    }
+}
+
+@keyframes growing {
+    from {
+        font-size: 3em;
+        font-weight: 300;
+    }
+    to {
+        font-size: 10em;
+        font-weight: 900;
+    }
+}
+
+@keyframes uppies {
+    from {
+        padding: 0;
+        display: inline;
+    }
+    to {
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+}
