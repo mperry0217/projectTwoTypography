@@ -177,6 +177,7 @@ h1 {
     right: 5%;
     color: white;
     z-index: 1;
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 .moon {
@@ -196,6 +197,7 @@ h1 {
 
 .stars {
     position: relative;
+    background-color: red;
 }
 
 #star1,
@@ -206,11 +208,38 @@ h1 {
 #star6,
 #star7 {
     position: absolute;
+    display: inline-block;
+    background-color: blue;
+}
+
+#star1 {
+    color: white;
 }
 
 #star2 {
     left:0;
 }
+
+#star3 {
+    right:0;
+}
+
+#star4 {
+    left:0;
+}
+
+#star5 {
+    right:0;
+}
+
+#star6 {
+    left:0;
+}
+
+#star7 {
+    right:0;
+}
+
 
 
 
@@ -224,8 +253,6 @@ h1 {
 
 
 /* animations */
-
-
 
 
 
@@ -261,11 +288,12 @@ h1 {
     from {
         font-size: 1em;
         font-weight: 300;
+        opacity: 0;
     }
     to {
         font-size: 5em;
         font-weight: 900;
-        /* text-shadow: 0 0 20px white; */
+        opacity: 100;
     }
 }
 
@@ -278,7 +306,7 @@ h1 {
     }
 }
 
-@keyframes uppies { /* HELP */
+@keyframes uppies { 
     from {
         transform: translatey(0px)
     }
