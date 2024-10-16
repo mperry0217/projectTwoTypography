@@ -308,10 +308,10 @@ h1 {
 
 @keyframes uppies { 
     from {
-        transform: translatey(0px)
+        transform: translateY(0px)
     }
     to {
-        transform: translatey(-20px)
+        transform: translateY(-20px)
     }
 }
 
