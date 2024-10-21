@@ -20,5 +20,7 @@ Fonts used
 
 Professor Joshua Oakley taught and helped me adjust all my code. 
 
+Song credits to Tom Burkett at Redding School of the Arts.
+
 Some code was borrowed from Mario Duarte via CopePen regarding translating via animation, https://codepen.io/MarioDesigns/pen/woJgeo .
  
